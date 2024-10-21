@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link herf="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to HTML Basics</h1>
+        <p>Your guide to understanding the structure of a webpage</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Container Elements: div, span, pre, code</h2>
+            <div>
+                This is a <strong>div</strong> element, it acts as a container for other elements.
+            </div>
+            <p>This is a <span>span</span> element. It is an inline container used to group text or elements inline</p>
+            <pre>
+                This is a preformatted block.
+                It preserves whitespace and formatting.
+            </pre>
+            <p>Here is some <code>inline code</code> inside a paragraph.</p>
+        </section>
+
+        <section>
+            <h2>Text formatting: b, strong, i, sup, sub</h2>
+            <p><b>This is bold text using the b tag.</b></p>
+            <p><strong>This is bold text using the strong tag (for emphasis).</strong></p>
+            <p><i>This is italic text using the i tag</i></p>
+            <p>Superscript like E = mc<sup>2</sup></p>
+            <p>Subscript like H<sub>2</sub>O</p>
+        </section>
+
+        <section>
+            <h2>Lists: ol, ul, li</h2>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>1st item</li>
+                <li>2nd item</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>1st item</li>
+                <li>2nd item</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Media: img, audio, video</h2>
+            <h3>Image example</h3>
+            <img src="https://via.placeholder.com/150" alt="Placeholder image">
+
+            <h3>Audio example</h3>
+            <audio controls>
+                <source src="assets/example.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video example</h3>
+            <video controls width="320">
+                <source src="assets/videos/example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Table example</h2>
+            <table border="1">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1a</td>
+                        <td>1b</td>
+                    </tr>
+                    <tr>
+                        <td>2a</td>
+                        <td>2b</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Links: a</h2>
+            <p>This is an example of a anchor link tag: <a href="https://www.5pence.net" target="_blank">Vist Spencer's website</a></p>
+        </section>
+
+        <section>
+            <h2>Form elements</h2>
+            <form action="#" method="post">
+                <label for="text-input">Text Input:</label>
+                <input type="text" id="text-input" name="text"><br>
+
+                <label for="password-input">Password Input:</label>
+                <input type="password" id="password-input" name="password"><br>
+
+                <label for="check1">Checkbox</label>
+                <input type="checkbox" id="check1" name="check1" value="option1">Option1<br>
+
+                <label for="radio1">Radio Button</label>
+                <input type="radio" id="radio1" name="radio" value="option1">Option1<br>
+
+                <label for="dropdown">Select (Dropdown):</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select><br>
+
+                <label for="textarea">Textarea:</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br>
+
+                <label for="file-input">File Input:</label>
+                <input type="file" id="file-input" name="file"><br>
+
+                <label for="range">Range Input:</label>
+                <input type="range" id="range" name="range" min="0" max="100"><br>
+
+                <label for="number-input">Number Input:</label>
+                <input type="number" id="number-input" name="number"><br>
+
+                <label for="email">eMail Input:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="url">URL Input:</label>
+                <input type="url" id="url" name="url" required><br>
+
+                <label for="date">Date Input:</label>
+                <input type="date" id="date" name="date"><br>
+
+                <input type="submit" value="Submit this long form!">
+            </form>
+        </section>
+
+        <section>
+            <h2>Characters and Symbols</h2>
+            <p>&copy; Copyright symbol</p>
+            <p>&lt; Less than symbol</p>
+            <p>&gt; Greater than symbol</p>
+            <p>&amp; Ampersand symbol</p>
+        </section>
+
+        <section>
+            <h2>Semantic Elements: section, article, aside</h2>
+            <section>
+                The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading ( h1- h6 element) as a child of the section element.
+            </section>
+            <article>
+                The article element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.
+            </article>
+            <aside>
+                The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+            </aside>
+        </section>
+
+        <section>
+            <h2>HTML Comments</h2>
+            <!-- This is an HTML comment. It will not be displayed on the webpage -->
+            <p>Inspect the source code to see the comment!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML Basics | Code Institute Course</p>
+    </footer>
+</body>
+</html>
